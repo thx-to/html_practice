@@ -1,0 +1,392 @@
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+html {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family:  'Pretendard Variable', -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Spoqa Han Sans Neo", "Malgun Gothic", sans-serif;
+  font-weight: 400;
+  font-size: max(12px, min(17px, .9988249119vw));
+  color: white;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  word-break: keep-all;
+  letter-spacing: -.02em;
+  background-color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: none;
+  -webkit-text-size-adjust: 100%;
+  font-kerning: none;
+}
+
+.page-home.intro-done, .page-home-v2.intro-done {
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: initial;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+#loading {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    transition: all .6s;
+    transition-delay: .2s;
+}
+
+.__BAT__ {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.wrapper {
+  left: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  color: white;
+  transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  display: block;
+}
+
+#header .container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1.7647058824rem;
+}
+
+#header .header-content {
+  padding: 1.7647058824rem 0;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+#header .brand .__anim {
+  width: 5.8823529412rem;
+  height: 5.8823529412rem;
+  display: block;
+  margin: -0.8823529412rem -1.0588235294rem -0.8823529412rem;
+}
+
+
+#header .page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6470588235rem;
+  line-height: 70%;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  text-transform: lowercase;
+}
+
+.txt-en {
+  font-family: "RM Neue", 'Pretendard Variable',-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Spoqa Han Sans Neo","Malgun Gothic",sans-serif !important;
+}
+
+#header .btn-nav-toggle {
+  margin-left: auto;
+  position: relative;
+  z-index: 3;
+}
+
+#header .btn-nav-toggle svg {
+  width: 1.5294117647rem;
+  height: 1.9411764706rem;
+}
+
+/* open 클래스가 적용된 경우 btn-nav-toggle의 색상 변경 */
+#header .btn-nav-toggle.open .toggle-icon {
+  fill: black; /* open 시 버튼 색상 변경 */
+}
+
+#header .btn-nav-toggle.open .toggle-icon {
+  fill: black !important; /* open 클래스가 있을 때 색상 변경 */
+}
+
+
+#header svg {
+  display: block;
+}
+
+#header svg path {
+  fill: white;
+  transition: fill .4s cubic-bezier(.165,.84,.44,1);
+  will-change: fill;
+}
+
+#header a, #header span {
+  display: block;
+}
+
+#header .btn-nav-toggle .__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition : transform .6s cubic-bezier(.165,.84,.44,1);
+  will-change: transform;
+}
+
+/* 'open' 클래스가 있을 때 __line의 변환 */
+#header .btn-nav-toggle.open .__line:nth-child(1) {
+  transform: rotate(45deg); /* 첫 번째 선은 45도 회전 */
+}
+
+#header .btn-nav-toggle.open .__line:nth-child(2) {
+  transform: scaleX(-1); /* 두 번째 선은 -45도 회전 */
+}
+
+#header .btn-nav-toggle.open {
+  color: #000; /* open 클래스가 있을 때 색상 변경 */
+}
+
+#nav {
+  display: block; /* 기본적으로 nav는 보이지 않음 */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+  color: black;
+  z-index: 2;
+  transition: transform 1.2s cubic-bezier(.23,1,.32,1);
+  transform: translateX(100%); /* 기본적으로 화면 밖에 있음 */
+  will-change: transform;
+}
+
+/* nav에 open 클래스가 추가되면 메뉴가 열림 */
+#nav.open {
+  transform: translateX(0); /* 화면에 나타남 */
+}
+
+
+#nav .gnb {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+#nav .gnb li {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: transform 1.2s cubic-bezier(.23,1,.32,1);
+  transform: translateX(200%);
+  will-change: transform;
+  transition-delay: .4s;
+}
+
+#nav .gnb a {
+  display: block;
+  color: black;
+  font-size: max(40px, 10.1851851852vmin);
+  line-height: 110%;
+  letter-spacing: -.024em;
+  position: relative;
+  font-family: 'RM Neue', sans-serif;
+  font-weight: 460;
+}
+
+.btn-nav-toggle.open+#nav .gnb li:nth-child(1) {
+    transition-delay: 40ms;
+}
+.btn-nav-toggle.open+#nav .gnb li:nth-child(2) {
+    transition-delay: 80ms;
+}
+.btn-nav-toggle.open+#nav .gnb li:nth-child(3) {
+    transition-delay: .12s;
+}
+.btn-nav-toggle.open+#nav .gnb li:nth-child(4) {
+    transition-delay: .16s;
+}
+.btn-nav-toggle.open+#nav .gnb li:nth-child(5) {
+    transition-delay: .2s;
+}
+.btn-nav-toggle.open+#nav .gnb li:nth-child(6) {
+    transition-delay: .24s;
+}
+.btn-nav-toggle.open+#nav .gnb li {
+    transform: translateX(0);
+}
+
+
+#nav .gnb a:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: 50% 50% no-repeat;
+    pointer-events: none;
+    width: 100vw;
+    background-size: auto 100%;
+    height: .7090909091em;
+    content: "";
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity .4s;
+}
+
+#nav .gnb li:nth-child(1) a:after {
+      background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i1.svg?v=2);
+}
+#nav .gnb li:nth-child(2) a:after {
+    background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i2.svg?v=2);
+}
+#nav .gnb li:nth-child(3) a:after {
+    background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i3.svg?v=2);
+}
+#nav .gnb li:nth-child(4) a:after {
+    background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i4.svg?v=2);
+}
+#nav .gnb li:nth-child(5) a:after {
+    background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i5.svg?v=2);
+}
+#nav .gnb li:nth-child(6) a:after {
+    background-image: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/nav/i6.svg?v=2);
+}
+
+#nav .langs, #nav .visit-blog {
+  position: absolute;
+  right: 1.7647058824rem;
+  bottom: 1.7647058824rem;
+}
+
+#nav .langs a {
+  display: block;
+}
+
+#nav .langs a span {
+  display: block;
+  font-weight: 400;
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  gap: 1.1764705882rem;
+}
+
+.langs a .open {
+  opacity: 1;
+}
+
+.btn-lined {
+  position: relative;
+  --bg-color: black;
+  line-height: 1.2;
+}
+
+.btn-lined .__txt {
+  position: relative;
+}
+
+.btn-lined .__line {
+  position: absolute;
+  bottom: -.15em;
+  height: 1px;
+  background: var(--bg-color, black);
+}
+
+.size-caption1 {
+  font-size: 1.1176470588rem;
+  line-height: 180%;
+  letter-spacing: -.01em;
+}
+
+#main {
+
+}
+
+#footer {
+
+}
