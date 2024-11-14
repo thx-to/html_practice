@@ -1,0 +1,146 @@
+#footer {
+    background: #000;
+    color: #fff;
+    padding: 3.5294117647rem 0;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+#footer .footer-inner {
+    position: relative;
+}
+
+#footer .footer-top {
+    margin-bottom: 12.9411764706rem;
+}
+
+#footer .footer-top .footer-content {
+    align-items: flex-start;
+}
+
+#footer .footer-content {
+    display: flex;
+    align-items: center;
+    gap: 3.5294117647rem;
+}
+
+#footer .slogan a p {
+    font-weight: 400;
+    position: relative;
+}
+
+#footer .slogan a p .__slash {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+#footer .slogan a p .__slash img {
+    height: .7014925373em;
+    transform: translateY(-8%);
+}
+
+#footer .slogan a p .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e5ff48;
+    opacity: 0;
+    display: flex;
+}
+
+#footer .extra {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#footer .langs {
+    margin-right: 4.7058823529rem;
+}
+
+.langs {
+    display: flex;
+    align-items: center;
+    gap: 1.1764705882rem;
+}
+
+.langs a.active {
+    opacity: 1;
+}
+
+.btn-lined.__wh {
+    --bg-color: #fff;
+}
+
+.langs a {
+    display: block;
+    opacity: .5;
+}
+
+.btn-lined {
+    position: relative;
+    --bg-color: #000;
+    line-height: 1.2;
+}
+
+#footer .sns {
+    display: flex;
+    gap: 2.9411764706rem;
+}
+
+#footer .sns a {
+    display: block;
+    transition: opacity .2s;
+}
+
+#footer .sns a svg, #footer .sns a img {
+    display: block;
+    width: auto;
+    height: 1.7647058824rem;
+}
+
+#footer .menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#footer .menu ul {
+    display: flex;
+    gap: 3.6842105263em;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+#footer .menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.btn-lined .__txt {
+    position: relative;
+}

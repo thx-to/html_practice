@@ -98,12 +98,6 @@ h1 {
   vertical-align: baseline;
 }
 
-.wrapper {
-  left: 100vw;
-  height: 100vh;
-  display: block;
-}
-
 #header {
   position: fixed;
   top: 0;
