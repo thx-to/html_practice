@@ -45,6 +45,10 @@ video {
   object-fit: contain;
   overflow-clip-margin: content-box;
   overflow: clip;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
 #homeMain .__bg .intro {
@@ -174,4 +178,266 @@ video {
   100% {
     transform: translate3d(0, -40%, 0); /* 원래 위치로 돌아오기 */
   }
+}
+
+.page-home-v2 .sub-content {
+  background: #fff;
+  color: #000;
+}
+
+.pt-250 {
+    padding-top: 14.7058823529rem;
+}
+
+.pb-220 {
+    padding-bottom: 12.9411764706rem;
+}
+
+#homeSlogan .slogan-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.size-subtitle1--sm {
+    font-size: 2.1176470588rem;
+    line-height: 112%;
+    letter-spacing: -.02em;
+}
+
+.mt-40 {
+    margin-top: 2.3529411765rem;
+}
+
+.btn.sm {
+    height: 2.1052631579em;
+    padding: 0 1.3157894737em;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    line-height: 1 !important;
+    height: 4.2105263158em;
+    border-radius: 4.2105263158em;
+    padding: 0 2.3684210526em;
+    font-weight: 400;
+    border: 1.5px solid #000;
+    transition: background-color .4s, color .4s, border-color .4s;
+    box-sizing: border-box;
+}
+
+.btn.sm:before {
+    width: 1.6315789474em;
+    height: .8421052632em;
+    margin-right: .8947368421em;
+}
+
+.btn:before {
+    background: url(//batcrew.co.kr/wp-content/themes/bat/assets/css/../img/icon/arrow-btn.svg?v=2) 50% 50% no-repeat;
+    background-size: contain;
+    width: 1.6315789474em;
+    height: .8421052632em;
+    margin-right: .8947368421em;
+    content: "";
+    transition: background .4s;
+}
+
+.__uppercase {
+    text-transform: uppercase !important;
+}
+
+.container .__inner {
+    max-width: 1702px;
+    margin: 0 auto;
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#homeFeaturedWorks {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.pt-70 {
+    padding-top: 4.1176470588rem;
+}
+
+.size-h2 {
+    font-size: 3.9411764706rem;
+    line-height: 110%;
+    letter-spacing: -.02em;
+}
+
+.font-w400 {
+    font-weight: 400;
+}
+
+#homeFeaturedWorks .featured-works .featured-work {
+    height: auto;
+    min-height: initial;
+    aspect-ratio: 16 / 9;
+    color: #fff;
+}
+
+#homeFeaturedWorks .featured-work {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    cursor: none;
+}
+
+.mb-70 {
+    margin-bottom: 4.1176470588rem;
+}
+
+article {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+#homeFeaturedWorks .featured-work .__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section .__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#homeFeaturedWorks .featured-work .__bg video, #homeFeaturedWorks .featured-work .__bg img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#homeFeaturedWorks .featured-work .__desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: min(70px, 6.4117647059rem) 0;
+}
+
+.container.__sm {
+    padding: 0 max(26px, 3.59375vw);
+}
+
+#homeFeaturedWorks .featured-works .featured-work .__title {
+    margin-bottom: .4166666667em;
+}
+
+#homeFeaturedWorks .featured-work .__title {
+    font-weight: 600;
+    margin-bottom: .625em;
+}
+
+.size-subtitle1 {
+    font-size: 2.2235294118rem;
+    line-height: 120%;
+    letter-spacing: -.01em;
+}
+
+#homeFeaturedWorks .featured-works .featured-work .__excerpt {
+    margin-bottom: .7142857143em;
+}
+
+#homeFeaturedWorks .featured-work .__excerpt {
+    font-weight: 600;
+    margin-bottom: 1.0714285714em;
+}
+
+.size-subtitle2 {
+    font-size: 1.6470588235rem;
+    line-height: 130%;
+    letter-spacing: -.005em;
+}
+
+#homeFeaturedWorks .featured-work .__cat {
+    display: flex;
+    opacity: .6;
+    flex-wrap: wrap;
+    margin-right: -3em;
+}
+
+.size-caption2 {
+    font-size: .9411764706rem;
+    line-height: 180%;
+    letter-spacing: -.01em;
+}
+
+#homeFeaturedWorks .featured-work .__cat span {
+    display: block;
+    margin-right: 2.1052631579em;
+    letter-spacing: -.01em;
+}
+
+@media screen and (hover: hover) {
+    #homeFeaturedWorks .featured-work .over-link {
+        display: block;
+    }
+}
+
+#homeFeaturedWorks .featured-work .over-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    cursor: none;
+}
+
+#homeFeaturedWorks .featured-works .featured-work .__bg img {
+    background: #000;
+}
+
+#homeFeaturedWorks .featured-work .__bg video, #homeFeaturedWorks .featured-work .__bg img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section .__bg img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
