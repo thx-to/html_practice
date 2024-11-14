@@ -193,6 +193,14 @@ video {
     padding-bottom: 12.9411764706rem;
 }
 
+.pb-260 {
+    padding-bottom: 15.2941176471rem;
+}
+
+.pt-260 {
+    padding-top: 15.2941176471rem;
+}
+
 #homeSlogan .slogan-content {
     display: flex;
     flex-direction: column;
