@@ -565,23 +565,49 @@ article {
     width: 53.5294117647rem;
 }
 
-.__marquee-contact {
-    background: #e5ff48;
-    display: block;
+  .rolling-container {
+    overflow: hidden;
+    background-color: #e5ff48;
+    white-space: nowrap;
     position: relative;
     width: 100%;
-    overflow: hidden;
-}
-
-.__marquee-contact .__slide {
-    position: relative;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
     height: 50px;
-    color: #000;
+    color: black;
     font-size: 16px;
     letter-spacing: -.01em;
     line-height: 1.8;
-    animation: marquee 30s linear infinite;
-}
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-weight: 500;
+  }
+
+  .rolling {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rolling 40s linear infinite; /* 애니메이션 속도 */
+  }
+
+    .rolling span {
+    display: inline-block;
+    padding-right: 150px; /* 각 문구 사이의 간격 */
+  }
+
+    /* 마지막 문구 뒤에는 간격을 없애기 */
+  .rolling span:last-child {
+    padding-right: 0;
+  }
+
+    .rolling span:last-child {
+    padding-right: 0;
+  }
+
+  /* 애니메이션 설정 */
+  @keyframes rolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* 화면에서 왼쪽으로 완전히 밀기 */
+    }
+  }
